@@ -1,0 +1,37 @@
+div, section, h1, h2, h3, h4, h5, h6, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  // overflow-y: scroll;
+}
+
+.body {
+  margin-top: 3%;
+  width: 80%;
+  background-image: url(../../images/IMG_1339.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.content-box {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__image {
+  width: 600px;
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
