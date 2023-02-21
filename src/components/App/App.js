@@ -8,7 +8,7 @@ import footerImg from '../../images/footer.png'
 function App() {
   
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/cripto-hunter">
     <div className="page">
       <SideBar />
         <div className="body">
