@@ -1,14 +1,14 @@
 .side-bar {
   position: fixed;
   top: 50px;
-  right: 20px;
+  right: 50px;
   display: flex;
   flex-direction: column;
   z-index: 1000;
 
   &__button {
-    width: 75px;
-    height: 75px;
+    width: 40px;
+    height: 40px;
     background-size: cover;
     cursor: pointer;
   }

@@ -12,12 +12,11 @@ div, section, h1, h2, h3, h4, h5, h6, p, img {
   align-items: center;
   position: relative;
   overflow: hidden;
-  // overflow-y: scroll;
 }
 
 .body {
   margin-top: 3%;
-  width: 80%;
+  width: 50%;
   background-image: url(../../images/IMG_1339.JPG);
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,7 +30,7 @@ div, section, h1, h2, h3, h4, h5, h6, p, img {
 }
 
 .footer__image {
-  width: 600px;
+  width: 300px;
   margin-top: -40px;
   margin-bottom: -40px;
 }
