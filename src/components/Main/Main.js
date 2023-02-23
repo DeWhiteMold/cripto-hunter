@@ -67,9 +67,9 @@ function Main() {
           <img src={buyImg} alt="buy" className='buy-blok__btn' />
         </section>
       </main>
-      <img src={firtsGirlImage} alt="" className={`animated-girl animated-girl_position_left-top ${scrollTop > 10 ? '' : 'animated-girl_position_left-top_hidden'}`}/>
-      <img src={secondGirlImage} alt="" className={`animated-girl animated-girl_position_right-mid ${scrollTop > 400 ? '' : 'animated-girl_position_right-mid_hidden'}`}/>
-      <img src={thirdGirlImage} alt="" className={`animated-girl animated-girl_position_left-bottom ${scrollTop > 900 ? '' : 'animated-girl_position_left-bottom_hidden'}`}/>
+      <img src={firtsGirlImage} alt="" className={`animated-girl animated-girl_position_left-top ${{/*scrollTop > 10 ? '' : 'animated-girl_position_left-top_hidden' */}}`}/>
+      <img src={secondGirlImage} alt="" className={`animated-girl animated-girl_position_right-mid ${{/*scrollTop > 400 ? '' : 'animated-girl_position_right-mid_hidden'*/}}`}/>
+      <img src={thirdGirlImage} alt="" className={`animated-girl animated-girl_position_left-bottom ${{/*scrollTop > 900 ? '' : 'animated-girl_position_left-bottom_hidden'*/}}`}/>
     </>
   )
 }

@@ -18,6 +18,7 @@
   &__subtitle {
     margin-top: -100px;
     width: 600px;
+    margin-bottom: -30px;
   }
 }
 
@@ -25,7 +26,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: scroll;
 
   &__description {
     font-size: 30px;
@@ -33,6 +33,7 @@
   }
 
   &__title {
+    margin-top: -30px;
     width: 250px;
   }
 }
@@ -40,9 +41,9 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 50px;
-  row-gap: 25px;
-  margin-top: 100px;
+  column-gap: 30px;
+  row-gap: 15px;
+  margin-top: 10px;
 }
 
 .card {
@@ -55,9 +56,9 @@
   }
 
   &__screenshot {
-    margin-top: 30px;
-    width: 300px;
-    height: 150px;
+    margin-top: 10px;
+    width: 250px;
+    height: 125px;
     background-size: cover;
     filter: blur(3px);
   }
@@ -65,15 +66,15 @@
   &__video-icon {
     position: absolute;
     width: 75px;
-    left: 125px;
-    top: 100px;
+    left: 90px;
+    top: 70px;
   }
 
   &__txt-icon {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 25px;
-    width: 200px;
+    width: 150px;
   }
 }
 
@@ -81,7 +82,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10px;
 
 
   &__price {
@@ -92,47 +93,47 @@
   &__btn {
     margin-top: -150px;
     width: 400px;
-    margin-bottom: 50px;
+    margin-bottom: -30px;
   }
 }
 
 .animated-girl {
-  width: 700px;
+  width: 400px;
   position: absolute;
-  transition: 1.5s ease-out;
+  // transition: 1.5s ease-out;
 
   &_position_left-top{
     transform: rotate(25deg);
     top: 0;
-    left: -350px;
+    left: -150px;
 
-    &_hidden {
-      top: 800px;
-      left: -800px;
-      opacity: 0;
-    }
+    // &_hidden {
+    //   top: 800px;
+    //   left: -800px;
+    //   opacity: 0;
+    // }
   }
 
   &_position_right-mid{
     transform: rotate(-25deg);
     top: 500px;
-    right: -350px;
+    right: -150px;
     z-index: 2;
 
-    &_hidden {
-      top: 1300px;
-      right: -800px;
-      opacity: 0;
-    }
+    // &_hidden {
+    //   top: 1300px;
+    //   right: -800px;
+    //   opacity: 0;
+    // }
   }
 
   &_position_left-bottom{
     bottom: 0;
-    left: -300px;
+    left: -100px;
 
-    &_hidden {
-      bottom: -800px;
-      opacity: 0;
-    }
+    // &_hidden {
+    //   bottom: -800px;
+    //   opacity: 0;
+    // }
   }
 }
