@@ -16,7 +16,6 @@ import {useState, useEffect} from 'react';
 
 function Main() {
   const [scrollTop, setScrollTop] = useState(0);
-  console.log(scrollTop);
 
   useEffect(() => {
     const handleScroll = event => {
@@ -43,7 +42,7 @@ function Main() {
         <section className="gallery">
           {courcePics.map((pic, index) => {
             return (
-            <div className='card'>
+            <div className='card' key={index}>
               <h3 className='card__title'>{`${index + 1} courso`}</h3>
               <div className='card__screenshot' style={{backgroundImage: `url(${pic})`}} />
               <img className='card__video-icon' src={videoImg} alt="" />
