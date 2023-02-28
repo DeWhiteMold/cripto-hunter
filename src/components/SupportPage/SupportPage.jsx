@@ -10,7 +10,13 @@ function SupportPage() {
   return (
     <main className="support">
       <img src={titleImg} alt="" className="support__title" />
-      <p className="support__description">description</p>
+      <p className="support__description">
+        Después de la compra, escribe a uno de nuestros equipos de soporte 
+        para recibir contenido. El contenido se envía como un archivo ZIP. 
+        Si deseas continuar participando en el proyecto, por favor escribe al 
+        lugar donde recibió el contenido. Si tienes preguntas adicionales, 
+        envía un correo electrónico.
+      </p>
       <div className="support__links">
         <a href="#" className="support__link">
           <img src={mailIcon} alt="" className="support__link-icon" />

@@ -1,4 +1,9 @@
-div, section, h1, h2, h3, h4, h5, h6, p, img {
+@font-face {
+  font-family: 'Rubik';
+  src: url(../../fonts/rubik/Rubik-Regular.ttf);
+}
+
+div, section, h1, h2, h3, h4, h5, h6, p, img, span {
   margin: 0;
   padding: 0;
 }
@@ -12,6 +17,8 @@ div, section, h1, h2, h3, h4, h5, h6, p, img {
   align-items: center;
   position: relative;
   overflow: hidden;
+  font-family: 'Rubik';
+  color: #888888;
 }
 
 .body {

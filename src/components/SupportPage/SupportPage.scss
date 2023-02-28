@@ -6,17 +6,18 @@
     width: 400px;
     transform: rotate(-20deg);
     align-self: flex-start;
-    margin-bottom: -100px;
+    margin-bottom: -120px;
   }
 
   &__description {
     align-self: flex-end;
     text-align: center;
-    width: 70%;
+    width: 60%;
+    margin-right: 40px;
   }
 
   &__links {
-    margin: 30px 0;
+    margin: 0px 0 30px;
     align-items: center;
     justify-content: center;
     width: 100%;

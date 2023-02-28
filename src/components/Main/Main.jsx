@@ -33,35 +33,41 @@ function Main() {
     <>
       <header className="header">
         <img src={titleImage} alt="title" className="header__welcome" />
-        <h1 className="header__title">header title</h1>
+        <h1 className="header__title">Un método exclusivo de ganar después de completar el curso! Empieza ahora mismo!</h1>
         <img src={subtitleImage} alt="subtitle" className="header__subtitle" />
       </header>
       <main className="content">
-        <p className="content__description">description</p>
+        <p className="content__description">Los creadores de los cursos educativos con más de 100 
+        mil clientes lanzan un curso sobre criptomonedas, que será impartido por inteligencia 
+        artificial. Al final del curso, te espera un proyecto único, que se convertirá en el 
+        método de ingresos número uno: conviértete en uno de los primeros participantes, 
+        aumenta tu fortuna.</p>
         <img src={contentTitle} className="content__title" />
         <section className="gallery">
-          {courcePics.map((pic, index) => {
+          {courcePics.map((el, index) => {
             return (
             <div className='card' key={index}>
-              <h3 className='card__title'>{`${index + 1} courso`}</h3>
-              <div className='card__screenshot' style={{backgroundImage: `url(${pic})`}} />
+              <h3 className='card__title'>{el.title}</h3>
+              <div className='card__screenshot' style={{backgroundImage: `url(${el.pic})`}} />
               <img className='card__video-icon' src={videoImg} alt="" />
             </div>
             )
           })}
           <div className='card'>
-            <h3 className='card__title'>TXT FILE</h3>
+            <h3 className='card__title'>Curso TXT</h3>
             <span className='card__description'>description</span>
             <img className='card__txt-icon' src={txtIcon} alt="" />
           </div>
             <div className='card'>
-              <h3 className='card__title'>5 courso</h3>
-            <span className='card__description'>description</span>
+              <h3 className='card__title'>Quinto curso</h3>
+              <span className='card__description'>Información sobre el proyecto exclusivo</span>
               <div className='card__screenshot' style={{backgroundImage: `url(${fiScr})`}} />
-              <img className='card__video-icon' src={videoImg} alt="" />
+              <img className='card__video-icon card__video-icon_with-desc' src={videoImg} alt="" />
             </div>
         </section>
         <section className='buy-blok'>
+          <span className='buy-blok__description'>Después de completar el curso, recibirás un 
+          certificado de finalización y una invitación exclusiva al proyecto criptográfico.</span>
           <img src={priceGif} alt="price" className='buy-blok__price'/>
           <img src={buyImg} alt="buy" className='buy-blok__btn' />
         </section>
