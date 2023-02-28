@@ -87,31 +87,33 @@
 
   &__price {
     transform: rotate(-90deg);
-    width: 200px;
+    width: 225px;
+    z-index: 1;
   }
 
   &__btn {
     margin-top: -150px;
     width: 400px;
+    height: 225px;
     margin-bottom: -30px;
+    transition: width .5s ease;
+    z-index: 2;
+
+    &:hover {
+      width: 425px;
+      cursor: pointer;
+    }
   }
 }
 
 .animated-girl {
   width: 400px;
   position: absolute;
-  // transition: 1.5s ease-out;
 
   &_position_left-top{
     transform: rotate(25deg);
     top: 0;
     left: -150px;
-
-    // &_hidden {
-    //   top: 800px;
-    //   left: -800px;
-    //   opacity: 0;
-    // }
   }
 
   &_position_right-mid{
@@ -119,21 +121,10 @@
     top: 500px;
     right: -150px;
     z-index: 2;
-
-    // &_hidden {
-    //   top: 1300px;
-    //   right: -800px;
-    //   opacity: 0;
-    // }
   }
 
   &_position_left-bottom{
     bottom: 0;
     left: -100px;
-
-    // &_hidden {
-    //   bottom: -800px;
-    //   opacity: 0;
-    // }
   }
 }

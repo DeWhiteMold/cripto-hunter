@@ -10,14 +10,15 @@ import footerImg from '../../images/footer.png'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  function handleMenuSwich() {
+    setIsMenuOpen(!isMenuOpen)
+  }
   
   return (
     <BrowserRouter basename="/cripto-hunter">
     <div className="page">
-        {isMenuOpen ? 
-          <SideMenu onMenuClick={() => {setIsMenuOpen(false)}}/> : 
-          <SideBar onBarClick={() => {setIsMenuOpen(true)}} />
-        }
+          <SideMenu isMenuOpen={isMenuOpen} onMenuClick={handleMenuSwich}/> : 
+          <SideBar isMenuOpen={isMenuOpen} onBarClick={handleMenuSwich} />
         <div className="body">
           <div className="content-box">
             <Routes>

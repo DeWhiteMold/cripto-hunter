@@ -9,11 +9,20 @@
   flex-direction: column;
   align-items: center;
   z-index: 5;
+  transition: .5s ease;
+
+  &_hidden {
+    right: -40%;
+  }
 
   &__title {
     width: 50%;
     margin-top: -40px;
     margin-bottom: -40px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__link {
@@ -23,6 +32,12 @@
     box-sizing: border-box;
     padding: 10px 20px;
     border-top: 1px #fff solid;
+    transition: background-color .5s ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #7ecfc694;
+    }
 
     &:last-of-type {
       border-bottom: 1px #fff solid;

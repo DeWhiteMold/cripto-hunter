@@ -32,5 +32,11 @@
 
   &__link-icon {
     width: 100px;
+    transition: width .5s ease;
+
+    &:hover {
+      cursor: pointer;
+      width: 120px;
+    }
   }
 }

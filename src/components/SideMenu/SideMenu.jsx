@@ -7,7 +7,7 @@ import menuIcon from '../../images/menuBtn.png'
 import homeIcon from '../../images/homeBtn.png'
 import supportIcon from '../../images/supportBtn.png'
 
-function SideMenu({onMenuClick}) {
+function SideMenu({onMenuClick, isMenuOpen}) {
   const navigate = useNavigate();
 
   function handelSupportClick() {
@@ -19,7 +19,7 @@ function SideMenu({onMenuClick}) {
   }
 
   return (
-    <nav className="side-menu">
+    <nav className={`side-menu ${isMenuOpen ? '' : 'side-menu_hidden'}`}>
       <img src={menuTitle} alt="" className="side-menu__title" onClick={onMenuClick} />
       <div className="side-menu__link" onClick={handleHomeClick}>
         <img src={homeIcon} alt="" className="side-menu__link-icon" />
