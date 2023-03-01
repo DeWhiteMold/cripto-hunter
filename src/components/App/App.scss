@@ -21,19 +21,55 @@ div, section, h1, h2, h3, h4, h5, h6, p, img, span {
   color: #888888;
 }
 
+.background {
+  filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../images/bg.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
 .body {
+  position: relative;
   margin-top: 3%;
   width: 50%;
-  background-image: url(../../images/IMG_1339.JPG);
+  background-image: url(../../images/IMG_1339.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 20px;
+  padding: 30px;
+  z-index: 2;
 }
 
 .content-box {
+  // background-image: url(../../images/bg.png);
+  // background-position: center;
+  // background-size: cover;
   background-color: #fff;
+  // background-size: 100vw;
+  // background-attachment: fixed;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    background-image: url(../../images/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    background-size: 100vw;
+    background-attachment: fixed;
+    opacity: .5;
+    z-index: 0;
+  }
 }
 
 .footer__image {

@@ -17,9 +17,11 @@ function App() {
   return (
     <BrowserRouter basename="/cripto-hunter">
     <div className="page">
-          <SideMenu isMenuOpen={isMenuOpen} onMenuClick={handleMenuSwich}/> : 
+      <div className="background"></div>
+          <SideMenu isMenuOpen={isMenuOpen} onMenuClick={handleMenuSwich}/> 
           <SideBar isMenuOpen={isMenuOpen} onBarClick={handleMenuSwich} />
         <div className="body">
+      
           <div className="content-box">
             <Routes>
               <Route path='/' element={<Main/>}/>

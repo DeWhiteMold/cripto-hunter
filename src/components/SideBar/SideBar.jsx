@@ -10,9 +10,7 @@ function SideBar({onBarClick, isMenuOpen}) {
 
   return (
     <nav className={`side-bar ${isMenuOpen ? 'side-bar_hidden' : ''}`} onClick={onBarClick}>
-      <div className="side-bar__button" style={{backgroundImage: `url(${homeIcon})`}}/>
       <div className="side-bar__button" style={{backgroundImage: `url(${menuIcon})`}}/>
-      <div className="side-bar__button" style={{backgroundImage: `url(${supportIcon})`}}/>
     </nav>
   )
 }

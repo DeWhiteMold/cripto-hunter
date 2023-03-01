@@ -21,16 +21,16 @@ function SupportPage() {
         <a href="#" className="support__link">
           <img src={mailIcon} alt="" className="support__link-icon" />
         </a>
-        <a href="#" className="support__link">
+        <a href="https://www.instagram.com/romamartinez_infohunter/" className="support__link">
           <img src={instIcon} alt="" className="support__link-icon" />
         </a>
-        <a href="#" className="support__link">
+        <a href="https://www.facebook.com/profile.php?id=100089487495187" className="support__link">
           <img src={facebIcon} alt="" className="support__link-icon" />
         </a>
-        <a href="#" className="support__link">
+        <a href="https://twitter.com/RomaMartinezzz" className="support__link">
           <img src={twIcon} alt="" className="support__link-icon" />
         </a>
-        <a href="#" className="support__link">
+        <a href="https://t.me/infohunter_support" className="support__link">
           <img src={tgIcon} alt="" className="support__link-icon" />
         </a>
       </div>

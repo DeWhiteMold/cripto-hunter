@@ -55,7 +55,6 @@ function Main() {
           })}
           <div className='card'>
             <h3 className='card__title'>Curso TXT</h3>
-            <span className='card__description'>description</span>
             <img className='card__txt-icon' src={txtIcon} alt="" />
           </div>
             <div className='card'>
@@ -73,8 +72,8 @@ function Main() {
         </section>
       </main>
       <img src={firtsGirlImage} alt="" className={`animated-girl animated-girl_position_left-top ${{/*scrollTop > 10 ? '' : 'animated-girl_position_left-top_hidden' */}}`}/>
-      <img src={secondGirlImage} alt="" className={`animated-girl animated-girl_position_right-mid ${{/*scrollTop > 400 ? '' : 'animated-girl_position_right-mid_hidden'*/}}`}/>
-      <img src={thirdGirlImage} alt="" className={`animated-girl animated-girl_position_left-bottom ${{/*scrollTop > 900 ? '' : 'animated-girl_position_left-bottom_hidden'*/}}`}/>
+      <img src={secondGirlImage} alt="" className={`animated-girl animated-girl_position_right-mid ${scrollTop > 200 ? '' : 'animated-girl_position_right-mid_hidden'}`}/>
+      <img src={thirdGirlImage} alt="" className={`animated-girl animated-girl_position_left-bottom ${scrollTop > 600 ? '' : 'animated-girl_position_left-bottom_hidden'}`}/>
     </>
   )
 }
