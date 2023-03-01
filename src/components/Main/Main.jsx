@@ -72,7 +72,7 @@ function Main() {
         </section>
       </main>
       <img src={firtsGirlImage} alt="" className={`animated-girl animated-girl_position_left-top ${{/*scrollTop > 10 ? '' : 'animated-girl_position_left-top_hidden' */}}`}/>
-      <img src={secondGirlImage} alt="" className={`animated-girl animated-girl_position_right-mid ${scrollTop > 200 ? '' : 'animated-girl_position_right-mid_hidden'}`}/>
+      <img src={secondGirlImage} alt="" className={`animated-girl animated-girl_position_right-mid ${scrollTop > 100 ? '' : 'animated-girl_position_right-mid_hidden'}`}/>
       <img src={thirdGirlImage} alt="" className={`animated-girl animated-girl_position_left-bottom ${scrollTop > 600 ? '' : 'animated-girl_position_left-bottom_hidden'}`}/>
     </>
   )

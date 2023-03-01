@@ -56,20 +56,20 @@ div, section, h1, h2, h3, h4, h5, h6, p, img, span {
   flex-direction: column;
   overflow: hidden;
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: calc(100% - 60px);
-    height: calc(100% - 60px);
-    background-image: url(../../images/bg.png);
-    background-position: center;
-    background-size: cover;
-    background-color: #fff;
-    background-size: 100vw;
-    background-attachment: fixed;
-    opacity: .5;
-    z-index: 0;
-  }
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   width: calc(100% - 60px);
+  //   height: calc(100% - 60px);
+  //   background-image: url(../../images/bg.png);
+  //   background-position: center;
+  //   background-size: cover;
+  //   background-color: #fff;
+  //   background-size: 100vw;
+  //   background-attachment: fixed;
+  //   opacity: .5;
+  //   z-index: 0;
+  // }
 }
 
 .footer__image {

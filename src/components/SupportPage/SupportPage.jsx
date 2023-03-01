@@ -5,8 +5,16 @@ import instIcon from '../../images/instagramIcon.png'
 import facebIcon from '../../images/facebookIcon.png'
 import twIcon from '../../images/twitterIcon.png'
 import tgIcon from '../../images/telegrammIcon.png'
+import { useState } from 'react'
 
 function SupportPage() {
+  const [isCopied, setisCopied] = useState(false);
+
+  function handleMailClick() {
+    navigator.clipboard.writeText('romamartinezsoporto@outlook.es');
+    setisCopied(true)
+  }
+
   return (
     <main className="support">
       <img src={titleImg} alt="" className="support__title" />
@@ -18,7 +26,7 @@ function SupportPage() {
         envía un correo electrónico.
       </p>
       <div className="support__links">
-        <a href="#" className="support__link">
+        <a href="#" className="support__link" onClick={handleMailClick}>
           <img src={mailIcon} alt="" className="support__link-icon" />
         </a>
         <a href="https://www.instagram.com/romamartinez_infohunter/" className="support__link">
@@ -34,6 +42,7 @@ function SupportPage() {
           <img src={tgIcon} alt="" className="support__link-icon" />
         </a>
       </div>
+      <span className='copy-alert'>{isCopied && "Copiado al portapapeles"}</span>
     </main>
   )
 }
