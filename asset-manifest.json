@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cripto-hunter/static/css/main.36fd0b43.css",
-    "main.js": "/cripto-hunter/static/js/main.f13e8cd8.js",
+    "main.css": "/cripto-hunter/static/css/main.5773809f.css",
+    "main.js": "/cripto-hunter/static/js/main.a0bedfb0.js",
     "static/js/787.3c18de47.chunk.js": "/cripto-hunter/static/js/787.3c18de47.chunk.js",
     "static/media/price.GIF": "/cripto-hunter/static/media/price.602fe7a9939d50666708.GIF",
     "static/media/videoIcon.png": "/cripto-hunter/static/media/videoIcon.b60333321e55271154e3.png",
@@ -34,12 +34,12 @@
     "static/media/supportBtn.png": "/cripto-hunter/static/media/supportBtn.ae06de48bd5d93ea19f7.png",
     "static/media/menuBtn.png": "/cripto-hunter/static/media/menuBtn.f52255c2e258a6286d6e.png",
     "index.html": "/cripto-hunter/index.html",
-    "main.36fd0b43.css.map": "/cripto-hunter/static/css/main.36fd0b43.css.map",
-    "main.f13e8cd8.js.map": "/cripto-hunter/static/js/main.f13e8cd8.js.map",
+    "main.5773809f.css.map": "/cripto-hunter/static/css/main.5773809f.css.map",
+    "main.a0bedfb0.js.map": "/cripto-hunter/static/js/main.a0bedfb0.js.map",
     "787.3c18de47.chunk.js.map": "/cripto-hunter/static/js/787.3c18de47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36fd0b43.css",
-    "static/js/main.f13e8cd8.js"
+    "static/css/main.5773809f.css",
+    "static/js/main.a0bedfb0.js"
   ]
 }
