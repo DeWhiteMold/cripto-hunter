@@ -14,10 +14,11 @@ import thirdGirlImage from '../../images/girlscn.png'
 import {useState, useEffect} from 'react';
 
 
-function Main() {
+function Main({onOpen}) {
   const [scrollTop, setScrollTop] = useState(0);
 
   useEffect(() => {
+    onOpen();
     const handleScroll = event => {
       setScrollTop(window.scrollY);
     };

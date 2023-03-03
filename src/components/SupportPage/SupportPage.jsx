@@ -1,4 +1,5 @@
 import './SupportPage.scss'
+import { useEffect } from 'react'
 import titleImg from '../../images/supportTitle.png'
 import mailIcon from '../../images/mailIcon.png'
 import instIcon from '../../images/instagramIcon.png'
@@ -7,13 +8,17 @@ import twIcon from '../../images/twitterIcon.png'
 import tgIcon from '../../images/telegrammIcon.png'
 import { useState } from 'react'
 
-function SupportPage() {
+function SupportPage({onOpen}) {
   const [isCopied, setisCopied] = useState(false);
 
   function handleMailClick() {
     navigator.clipboard.writeText('romamartinezsoporto@outlook.es');
     setisCopied(true)
   }
+
+  useEffect(() => {
+    onOpen()
+  })
 
   return (
     <main className="support">

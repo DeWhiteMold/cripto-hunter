@@ -7,11 +7,16 @@ import shopIcon from '../../images/shopIcon.png'
 import homeIcon from '../../images/homeBtn.png'
 import supportIcon from '../../images/supportBtn.png'
 
-function SideMenu({onMenuClick, isMenuOpen, }) {
+function SideMenu({onMenuClick, isMenuOpen}) {
   const navigate = useNavigate();
 
   function handelSupportClick() {
     navigate('/support', {replace: true})
+    onMenuClick()
+  }
+
+  function handleBuyClick() {
+    navigate('/buy', {replace: true})
     onMenuClick()
   }
 
@@ -27,7 +32,7 @@ function SideMenu({onMenuClick, isMenuOpen, }) {
         <img src={homeIcon} alt="" className="side-menu__link-icon" />
         <span className="side-menu__link-name">principal</span>
       </div>
-      <div className="side-menu__link">
+      <div className="side-menu__link" onClick={handleBuyClick}>
         <img src={shopIcon} alt="" className="side-menu__link-icon" />
         <span className="side-menu__link-name">comprar ahora</span>
       </div>

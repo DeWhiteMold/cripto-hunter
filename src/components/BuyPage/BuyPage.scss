@@ -1,0 +1,165 @@
+.buy-page {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    z-index: 3;
+
+    &-text {
+      width: 50%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-title {
+      font-size: 35px;
+      font-weight: bold;
+      color: #377c93;
+    }
+
+    &-caption {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    &-icon {
+      width: 15%;
+      height: 25%;
+    }
+
+    &-price {
+      transform: rotate(-90deg);
+      width: 20%;
+      margin-left: 70px;
+      margin-top: -20px;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+    z-index: 5;
+  }
+
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    transition: width .5s ease;
+
+    &:hover{
+      width: 200px;
+    }
+
+    &-icon {
+      width: 180px;
+      transition: width .5s ease;
+  
+      &:hover{
+        width: 200px;
+      }
+    }
+
+    &-code-box {
+      display: flex;
+      align-items: center;
+      width: 170;
+
+      &_bordered {
+        border: 3px solid #377c93;
+      }
+    }
+
+    &-copy {
+      width: 12px;
+      height: 12px;
+      margin-left: 5px;
+
+      &:hover {
+        width: 13px;
+        height: 13px;
+        cursor: pointer;
+      }
+    }
+
+    &-code {
+      text-align: center;
+      width: 130px;
+      overflow: scroll;
+    }
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+
+    &-img {
+      background-color: #fff;
+      width: 200px;
+      height: 120px;
+      transition: width .5s ease, height .5s ease;
+      z-index: 7;
+  
+      &:hover{
+        width: 250px;
+        height: 150px;
+        cursor: pointer;
+      }
+    }
+
+    &-text {
+      z-index: 6;
+      font-size: 13px;
+      margin-left: 10px;
+      height: 120px;
+      width: 70%;
+      opacity: 1;
+      overflow: hidden;
+      transition: width 1s ease, opacity 2s ease, margin-left 2s ease ;
+
+      &_hidden {
+        margin-left: 0;
+        opacity: 0;
+        width: 0;
+      }
+    }
+  }
+
+  &__help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &-text {
+      width: 300px;
+      text-align: center;
+      color: #377c93;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    &-support {
+      width: 300px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
