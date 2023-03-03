@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "/cripto-hunter/static/css/main.5773809f.css",
-    "main.js": "/cripto-hunter/static/js/main.a0bedfb0.js",
+    "main.css": "/cripto-hunter/static/css/main.f4dc6d6b.css",
+    "main.js": "/cripto-hunter/static/js/main.ca9bfbc8.js",
     "static/js/787.3c18de47.chunk.js": "/cripto-hunter/static/js/787.3c18de47.chunk.js",
     "static/media/price.GIF": "/cripto-hunter/static/media/price.602fe7a9939d50666708.GIF",
     "static/media/videoIcon.png": "/cripto-hunter/static/media/videoIcon.b60333321e55271154e3.png",
     "static/media/girlone.png": "/cripto-hunter/static/media/girlone.1d399565690d2ed02bc0.png",
     "static/media/girlscn.png": "/cripto-hunter/static/media/girlscn.d5247e7bb8c82163b898.png",
     "static/media/girl3.png": "/cripto-hunter/static/media/girl3.236d4e367c07e4d60754.png",
+    "static/media/crypto.png": "/cripto-hunter/static/media/crypto.4be3632043c53a20df93.png",
+    "static/media/card.png": "/cripto-hunter/static/media/card.87803b3de09d778c16d0.png",
+    "static/media/bitcoin.png": "/cripto-hunter/static/media/bitcoin.089fe53ca059887545c9.png",
     "static/media/IMG_1339.png": "/cripto-hunter/static/media/IMG_1339.112b0a2bb1be219d1acc.png",
+    "static/media/teter.png": "/cripto-hunter/static/media/teter.c5449e2961714d168081.png",
     "static/media/supportTitle.png": "/cripto-hunter/static/media/supportTitle.f61ee927a472c110253b.png",
+    "static/media/litcoin.png": "/cripto-hunter/static/media/litcoin.a8f4876cb67aadf9e9ae.png",
     "static/media/bg.png": "/cripto-hunter/static/media/bg.ea78d8db6a2ae55dd389.png",
     "static/media/content-title.png": "/cripto-hunter/static/media/content-title.b248525415f2061b8a71.png",
     "static/media/Rubik-Regular.ttf": "/cripto-hunter/static/media/Rubik-Regular.705a89f52bdf93b960ed.ttf",
+    "static/media/Rubik-Bold.ttf": "/cripto-hunter/static/media/Rubik-Bold.b24c64f715ba25a6e7f5.ttf",
     "static/media/subtitle.png": "/cripto-hunter/static/media/subtitle.6c0fbc03d400b4f75eed.png",
     "static/media/screen3.jpg": "/cripto-hunter/static/media/screen3.415c0c0e8232ee6ae983.jpg",
     "static/media/screen4.jpg": "/cripto-hunter/static/media/screen4.78861e9c7305af5e7f31.jpg",
@@ -26,6 +32,7 @@
     "static/media/buybtn.png": "/cripto-hunter/static/media/buybtn.e466dd0a65a76872bd4a.png",
     "static/media/instagramIcon.png": "/cripto-hunter/static/media/instagramIcon.bc3dbda43ff84a9b0d8c.png",
     "static/media/shopIcon.png": "/cripto-hunter/static/media/shopIcon.163eca37e5ae19319c15.png",
+    "static/media/caption.png": "/cripto-hunter/static/media/caption.8138ce943dd24279b671.png",
     "static/media/mailIcon.png": "/cripto-hunter/static/media/mailIcon.b9cf9245cbf88501b9f5.png",
     "static/media/txtfile-img.png": "/cripto-hunter/static/media/txtfile-img.3e022f745940d63fca1d.png",
     "static/media/twitterIcon.png": "/cripto-hunter/static/media/twitterIcon.520e66d156626361d548.png",
@@ -33,13 +40,14 @@
     "static/media/homeBtn.png": "/cripto-hunter/static/media/homeBtn.1f47afee0b78b24b966f.png",
     "static/media/supportBtn.png": "/cripto-hunter/static/media/supportBtn.ae06de48bd5d93ea19f7.png",
     "static/media/menuBtn.png": "/cripto-hunter/static/media/menuBtn.f52255c2e258a6286d6e.png",
+    "static/media/copy-icon.svg": "/cripto-hunter/static/media/copy-icon.e88a7cef263f912a5d9b17540ba61e97.svg",
     "index.html": "/cripto-hunter/index.html",
-    "main.5773809f.css.map": "/cripto-hunter/static/css/main.5773809f.css.map",
-    "main.a0bedfb0.js.map": "/cripto-hunter/static/js/main.a0bedfb0.js.map",
+    "main.f4dc6d6b.css.map": "/cripto-hunter/static/css/main.f4dc6d6b.css.map",
+    "main.ca9bfbc8.js.map": "/cripto-hunter/static/js/main.ca9bfbc8.js.map",
     "787.3c18de47.chunk.js.map": "/cripto-hunter/static/js/787.3c18de47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5773809f.css",
-    "static/js/main.a0bedfb0.js"
+    "static/css/main.f4dc6d6b.css",
+    "static/js/main.ca9bfbc8.js"
   ]
 }
