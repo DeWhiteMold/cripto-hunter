@@ -44,6 +44,7 @@ function BuyPage({onOpen}) {
         <img src={priceGif} alt="" className="buy-page__header-price" />
       </div>
       <div className="buy-page__main">
+        <span className='buy-page__span'>ELIJA UN MÉTODO DE PAGO</span>
         <div className="buy-page__cards">
           {
             buyPageCards.map((card) => {
@@ -51,9 +52,11 @@ function BuyPage({onOpen}) {
                 <div className="buy-page__card" key={card.code}>
                   <img src={card.icon} alt="" className="buy-page__card-icon" />
                   <div className={`buy-page__card-code-box ${card.border ? 'buy-page__card-code-box_bordered' : ''}`}>
-                    <span className='buy-page__card-code'>
-                      {card.code}
-                    </span>
+                    {card.link ?
+                      <a href={card.link} className='buy-page__card-code'>{card.code}</a> : 
+                      <span className='buy-page__card-code'>
+                        {card.code}
+                      </span>}
                     {card.copy && <img src={copyIcon} alt="" className='buy-page__card-copy' onClick={() => {handleCopy(card.code)}}/>}
                   </div>
                 </div>
@@ -62,7 +65,7 @@ function BuyPage({onOpen}) {
           }
         </div>
         <div className="buy-page__caption">
-          <img src={captionIcon} alt="" className="buy-page__caption-img" onClick={handleCaptionClick} />
+          <img src={captionIcon} alt="" className={`buy-page__caption-img ${isCapOpen ? '' : 'buy-page__caption-img_acitve'}`} onClick={handleCaptionClick} />
           <p className={`buy-page__caption-text ${isCapOpen ? '' : 'buy-page__caption-text_hidden'}`}>
           Página de pago del curso.  El pago se realiza mediante la transferencia de fondos a 
           la cuenta de la tarjeta/cuentas de criptomonedas.  Si no tienes una billetera de 
@@ -83,7 +86,9 @@ function BuyPage({onOpen}) {
           DESPUÉS DE PAGAR NO OLVIDES HACER UNA CAPTURA DE PANTALLA DEL PAGO Y ENVIARLA AL 
           SERVICIO DE SOPORTE PARA RECIBIR EL CONTENIDO!
           </p>
-          <img src={supportImg} alt="" className="buy-page__help-support" onClick={handleSupportClick}/>
+          <div className="buy-page__help-support-box">
+            <img src={supportImg} alt="" className="buy-page__help-support" onClick={handleSupportClick}/>
+          </div>
         </div>
       </div>
     </section>

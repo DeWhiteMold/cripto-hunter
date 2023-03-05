@@ -13,9 +13,10 @@ const buyPageCards = [
   },
   {
     icon: cryptoIcon,
-    code: 'https://exchange.mercuryo.io',
+    code: 'pagar',
     border: true,
-    copy: false
+    copy: false,
+    link: 'https://exchange.mercuryo.io'
   },
   {
     icon: teterIcon,

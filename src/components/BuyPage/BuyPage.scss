@@ -1,3 +1,30 @@
+@keyframes pulse-caption {
+  0% {
+    width: 200px;
+    height: 120px;
+  }
+  50% {
+    width: 220px;
+    height: 132px;
+  }
+  100% {
+    width: 200px;
+    height: 120px;
+  }
+}
+
+@keyframes pulse-support {
+  0% {
+    width: 280px;
+  }
+  50% {
+    width: 300px;
+  }
+  100% {
+    width: 280px;
+  }
+}
+
 .buy-page {
   display: flex;
   flex-direction: column;
@@ -23,6 +50,7 @@
     &-caption {
       text-align: center;
       font-size: 16px;
+      color: #aa6ec3;
     }
 
     &-icon {
@@ -45,6 +73,11 @@
     z-index: 5;
   }
 
+  &__span {
+    align-self: start;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
 
   &__cards {
     display: flex;
@@ -99,6 +132,8 @@
       text-align: center;
       width: 130px;
       overflow: scroll;
+      text-decoration: none;
+      color: #888;
     }
   }
 
@@ -114,6 +149,10 @@
       height: 120px;
       transition: width .5s ease, height .5s ease;
       z-index: 7;
+
+      &_acitve {
+        animation: pulse-caption 2s infinite;
+      }
   
       &:hover{
         width: 250px;
@@ -144,6 +183,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 200px;
     gap: 20px;
 
     &-text {
@@ -154,8 +194,16 @@
       font-size: 16px;
     }
 
-    &-support {
+    &-support-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 300px;
+    }
+
+    &-support {
+      width: 280px;
+      animation: pulse-support 2s infinite;
 
       &:hover {
         cursor: pointer;
