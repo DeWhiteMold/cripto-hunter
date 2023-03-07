@@ -182,13 +182,13 @@
     }
 
     &__title {
-      width: 90%;
-      font-size: 20px;
+      width: 60%;
+      font-size: 16px;
     }
 
     &__subtitle {
       width: 100%;
-      margin-top: -100px;
+      margin-top: -70px;
     }
   }
 
@@ -202,11 +202,17 @@
     grid-template-columns: 1fr;
   }
 
-  .card__txt-icon {
-    position: unset;
-    align-self: center;
-    margin-top: -50px;
-    margin-bottom: -50px;
+  .card{
+    &:nth-child(5) {
+      order: 100;
+    }
+
+    &__txt-icon {
+      position: unset;
+      align-self: center;
+      margin-top: -50px;
+      margin-bottom: -50px;
+    }
   }
 
   .buy-blok{
