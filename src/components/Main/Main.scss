@@ -38,6 +38,22 @@
     text-align: center;
   }
 
+  &__trailer {
+    &-title {
+      z-index: 8;
+      margin-top: 20px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    &-link {
+      z-index: 8;
+      color: #888;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
   &__title {
     margin-top: -30px;
     width: 250px;

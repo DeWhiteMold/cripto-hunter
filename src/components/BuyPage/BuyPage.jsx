@@ -79,12 +79,15 @@ function BuyPage({onOpen}) {
           </p>
         </div>
         <div className="buy-page__help">
-        <iframe id="ytplayer" type="text/html" width="300" height="168.75"
-          src="https://www.youtube.com/embed/QhGkHgdfHQU"
-          frameborder="0" allowfullscreen />
+          <div className="buy-page__video-box">
+            <span className="buy-page__video-title">MERCURYO INSTRUCCIÓN EN VÍDEO</span>
+            <iframe id="ytplayer" type="text/html" width="300" height="168.75"
+            src="https://www.youtube.com/embed/N0VuWjkOTqI"
+            frameborder="0" allowfullscreen />
+          </div>
           <p className="buy-page__help-text">
-          DESPUÉS DE PAGAR NO OLVIDES HACER UNA CAPTURA DE PANTALLA DEL PAGO Y ENVIARLA AL 
-          SERVICIO DE SOPORTE PARA RECIBIR EL CONTENIDO!
+            DESPUÉS DE PAGAR NO OLVIDES HACER UNA CAPTURA DE PANTALLA DEL PAGO Y ENVIARLA AL 
+            SERVICIO DE SOPORTE PARA RECIBIR EL CONTENIDO!
           </p>
           <div className="buy-page__help-support-box">
             <img src={supportImg} alt="" className="buy-page__help-support" onClick={handleSupportClick}/>

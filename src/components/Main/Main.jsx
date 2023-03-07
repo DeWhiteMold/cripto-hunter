@@ -12,10 +12,16 @@ import firtsGirlImage from '../../images/girl3.png'
 import secondGirlImage from '../../images/girlone.png'
 import thirdGirlImage from '../../images/girlscn.png'
 import {useState, useEffect} from 'react';
+import { useNavigate } from 'react-router-dom'
 
 
 function Main({onOpen}) {
   const [scrollTop, setScrollTop] = useState(0);
+  const navigate = useNavigate();
+
+  function handleBuyClick() {
+    navigate('/buy', {replace: true})
+  }
 
   useEffect(() => {
     onOpen();
@@ -43,6 +49,8 @@ function Main({onOpen}) {
         artificial. Al final del curso, te espera un proyecto único, que se convertirá en el 
         método de ingresos número uno: conviértete en uno de los primeros participantes, 
         aumenta tu fortuna.</p>
+        <span className='content__trailer-title'>TRAILER</span>
+        <a className='content__trailer-link' href="https://youtu.be/RmL01v0SPTs">youtu.be/RmL01v0SPTs</a>
         <img src={contentTitle} className="content__title" />
         <section className="gallery">
           {courcePics.map((el, index) => {
@@ -69,7 +77,7 @@ function Main({onOpen}) {
           <span className='buy-blok__description'>Después de completar el curso, recibirás un 
           certificado de finalización y una invitación exclusiva al proyecto criptográfico.</span>
           <img src={priceGif} alt="price" className='buy-blok__price'/>
-          <img src={buyImg} alt="buy" className='buy-blok__btn' />
+          <img src={buyImg} alt="buy" className='buy-blok__btn' onClick={handleBuyClick} />
         </section>
       </main>
       <img src={firtsGirlImage} alt="" className={`animated-girl animated-girl_position_left-top ${{/*scrollTop > 10 ? '' : 'animated-girl_position_left-top_hidden' */}}`}/>
