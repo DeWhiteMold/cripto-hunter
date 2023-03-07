@@ -55,3 +55,18 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .side-menu {
+    width: 100vw;
+
+    &_hidden {
+      right: -100%;
+    }
+
+    &__title {
+      margin-top: -30px;
+      margin-bottom: -30px;
+    }
+  }
+}

@@ -18,3 +18,14 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .side-bar {
+    top: 10px;
+    right: 10px;
+    
+    &_hidden {
+      right: -50px;
+    }
+  }
+}

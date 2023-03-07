@@ -94,3 +94,25 @@ div, section, h1, h2, h3, h4, h5, h6, p, img, span {
     z-index: 7;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .background {
+    display: none;
+  }
+
+  .body {
+    background-image: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: min-content;
+  }
+
+  .content-box {
+    width: 100%;
+  }
+
+  .footer {
+    margin-top: -50px;
+  }
+}
