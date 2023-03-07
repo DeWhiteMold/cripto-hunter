@@ -44,7 +44,7 @@ div, section, h1, h2, h3, h4, h5, h6, p, img, span {
 .body {
   position: relative;
   margin-top: 3%;
-  width: 50%;
+  width: 700px;
   background-image: url(../../images/IMG_1339.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ div, section, h1, h2, h3, h4, h5, h6, p, img, span {
   transition: width .5s ease;
 
   &_wide {
-    width: 70%;
+    width: 1050px;
   }
 }
 

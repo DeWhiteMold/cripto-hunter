@@ -50,7 +50,9 @@ function Main({onOpen}) {
         método de ingresos número uno: conviértete en uno de los primeros participantes, 
         aumenta tu fortuna.</p>
         <span className='content__trailer-title'>TRAILER</span>
-        <a className='content__trailer-link' href="https://youtu.be/RmL01v0SPTs">youtu.be/RmL01v0SPTs</a>
+        <iframe id="ytplayer" type="text/html" width="300" height="168.75"
+          src="https://www.youtube.com/embed/RmL01v0SPTs"
+          frameborder="0" allowfullscreen className='content__trailer-video'/>
         <img src={contentTitle} className="content__title" />
         <section className="gallery">
           {courcePics.map((el, index) => {
